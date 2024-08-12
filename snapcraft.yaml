@@ -7,13 +7,13 @@ description: |
   DuckDB is a fast in-process analytical database.
   Please see https://duckdb.org for information about DuckDB.
 
-  This snap contains the DuckDB CLI with some core extensions included:
+  This snap contains the DuckDB CLI with most core extensions included:
     autocomplete
     fts
-    icu
     httpfs
-    json
+    icu
     inet
+    json
 
 grade: devel
 confinement: strict
@@ -28,7 +28,7 @@ parts:
     plugin: cmake
     cmake-parameters:
       - -DCMAKE_BUILD_TYPE=Release
-      - -DBUILD_EXTENSIONS='autocomplete;icu;fts;httpfs;json;inet'
+      - -DBUILD_EXTENSIONS='autocomplete;fts;httpfs;icu;inet;json'
     build-packages:
       - git
       - libssl-dev
