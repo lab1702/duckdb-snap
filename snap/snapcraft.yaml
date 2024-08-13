@@ -5,15 +5,10 @@ license: MIT
 summary: DuckDB CLI
 description: |
   DuckDB is a fast in-process analytical database.
+  This snap contains the DuckDB CLI and some core extensions.
   Please see https://duckdb.org for information about DuckDB.
-
-  This snap contains the DuckDB CLI with most core extensions included:
-    autocomplete
-    fts
-    httpfs
-    icu
-    inet
-    json
+    and https://github.com/lab1702/duckdb-snap for
+    information about this snap.
 
 grade: devel
 confinement: strict
@@ -27,7 +22,6 @@ parts:
     source: https://github.com/duckdb/duckdb/archive/refs/tags/v1.0.0.tar.gz
     plugin: cmake
     cmake-parameters:
-      - -DCMAKE_BUILD_TYPE=Release
       - -DBUILD_EXTENSIONS='autocomplete;fts;httpfs;icu;inet;json'
     build-packages:
       - git
