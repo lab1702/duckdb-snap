@@ -7,6 +7,8 @@ Currently this is not available on the snap store, so you will have to build it 
 
 Make sure the [snapcraft](https://snapcraft.io/snapcraft) snap is installed and working.
 
+    sudo snap install snapcraft --classic
+
 Clone this repo:
 
     git clone https://github.com/lab1702/duckdb-snap.git
