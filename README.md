@@ -23,7 +23,7 @@ Build snap:
 
 Install snap:
 
-    sudo snap install ./duckdb_1.0.0-1_amd64.snap --dangerous
+    sudo snap install ./duckdb_1.1.0-snap01_amd64.snap --dangerous
 
 ## Other Documentation
 
